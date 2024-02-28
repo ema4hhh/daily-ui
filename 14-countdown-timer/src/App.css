@@ -1,0 +1,136 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.outer-circle {
+  border: 5px solid #32004F;
+  width: 50vh;
+  height: 50vh;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  width: 50vh;
+  height: 50vh;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+} 
+
+.inner-circle {
+  position: relative;
+  border: 2px solid #32004F;
+  width: 45vh;
+  height: 45vh;
+  box-sizing: border-box;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 5em;
+  letter-spacing: 5px;
+}
+
+.time-field::-webkit-outer-spin-button,
+.time-field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.time-field {
+  width: 66px;
+  box-sizing: border-box;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  padding: 7px 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: 2px solid #3A015C;
+  border-right: none;
+  border-radius: 2px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.time-field:focus {
+  outline: none;
+}
+
+.submit-btn {
+  cursor: pointer;
+  padding: 7px 15px;
+  font-weight: 700;
+  border: 2px solid #3A015C;
+  border-left: none;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  transition: all .2s;
+}
+
+.time {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  transform: translate(-50%, -50%); 
+}
+
+.buttons {
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin: 0 5px;
+  border: 2px solid #3A015C;
+  border-radius: 2px;
+  padding: 7px 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+button:hover, .submit-btn:hover {
+  background-color: #190028;
+}
+
+button:active {
+  transform: scale(.97);
+  filter: brightness(1.5);
+}
+
+.submit-btn:active {
+  filter: brightness(1.5);
+}
+
+form {
+  background-color: transparent;
+}

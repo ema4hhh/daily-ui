@@ -1,0 +1,66 @@
+main {
+  padding: 20px;
+}
+
+main > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+  padding: 20px;
+  background-color: antiquewhite;
+  border-radius: 5px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.success button {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100px;
+  text-transform: uppercase;
+  background-color: #00ac84;
+  color: antiquewhite;
+  border: none;
+  border-radius: 5px;
+}
+
+.success .icon {
+  background-color: #00ac84;
+  color: antiquewhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.error .icon {
+  background-color: #fc0100;
+  color: antiquewhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.error button {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100px;
+  text-transform: uppercase;
+  background-color: #fc0100;
+  color: antiquewhite;
+  border: none;
+  border-radius: 5px;
+}

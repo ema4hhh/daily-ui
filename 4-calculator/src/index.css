@@ -1,0 +1,19 @@
+* {
+  background-color: #0D0A0B;
+  color: #72B01D;
+  font-family: system-ui;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-height: 100vh;
+}
+
+#root {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}

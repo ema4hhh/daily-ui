@@ -1,0 +1,127 @@
+main {
+  width: 100vw;
+  margin-top: 5px;
+}
+h1 {
+  margin: 0px 0px 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1 > * {
+  margin-left: 10px;
+}
+
+.chat-container {
+  padding: 0 20px;
+  margin-top: 10px;
+}
+
+.chat-box {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chat-message {
+  display: flex;
+  align-items: end;
+  gap: 5px;
+}
+
+.user {
+  font-weight: 700;
+  font-size: .8em;
+}
+
+.time {
+  font-weight: 100;
+  font-size: .8em;
+  margin-left: 7px;
+}
+
+.chat-message > p {
+  margin: 0;
+  display: inline;
+}
+
+/* animation from https://uiverse.io/Lmickk2/lovely-fireant-30 */
+
+.loader {
+  display: flex;
+  transition: all .9s;
+  margin-top: 15px;
+}
+
+.loader div {
+  margin-left: 0.4rem;
+  background-color: #0F001A;
+  box-shadow: inset 2px 2px 10px #94BAE5;
+  border-radius: 100%;
+  height: .3rem;
+  width: .3rem;
+  align-self: end;
+}
+
+.loader > .user {
+  font-weight: 500;
+}
+
+.box-load1 {
+  animation: brighten 1.2s infinite;
+  margin-left: 5px !important;
+}
+
+.box-load2 {
+  animation: brighten 1.2s infinite;
+  animation-delay: .3s;
+}
+
+.box-load3 {
+  animation: brighten 1.2s infinite;
+  animation-delay: .6s;
+}
+
+@keyframes brighten {
+  100% {
+    background-color: #94BAE5;
+    box-shadow: none;
+  }
+}
+
+
+footer {
+  padding: 5px 10px;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+}
+
+.message-input {
+  flex: 1;
+  border: 1px solid #DB9FFE;
+  border-right: none;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.message-input:focus {
+  outline: none;
+}
+
+.send-message {
+  border: 1px solid #DB9FFE;
+  border-left: none;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}

@@ -1,0 +1,257 @@
+header {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+nav {
+  width: 100%;
+  color: #72B01D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+@media only screen and (min-width: 1200px) {
+  header {
+    flex-direction: row-reverse;
+    height: 100vh;
+    justify-content: center;
+  }
+  
+  .intro-image {
+    height: 100%;
+    clip-path: polygon(0 0, 56% 0, 100% 100%, 0% 100%);
+  }
+  
+  nav {
+    padding: 0 2vw;
+    font-size: 30px;
+    height: 10vh;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+  }
+  
+  .links {
+    gap: 5vw;
+  }
+
+  .accordion {
+    display: none;
+  }
+
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column-reverse;
+    height: 90vh;
+    justify-content: space-between;
+    margin-bottom: 3vh;
+  }
+  .intro-image {
+    width: 100%;
+  }
+
+  nav {
+    padding: 0 10px;
+    font-size: 10px;
+    position: relative;
+    justify-content: center;
+    height: 5vh;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .accordion {
+    position: absolute;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    background-color: transparent;
+    justify-content: center;
+  }
+
+  .accordion a {
+    color: inherit;
+    font-size: 30px;
+  }
+
+  .accordion-links {
+    position: absolute;
+    top: 5vh;
+    left: -100vw;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: transparent;
+    transition: all .4s;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .accordion .show {
+    left: 0 !important;
+  }
+
+  .accordion-links > * {
+    display: block;
+    background-color: transparent;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+}
+
+#gym-logo {
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+nav a {
+  font-weight: 700;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 5px;
+}
+
+.intro-container h1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 900;
+  margin: 0;
+  color: #F3EFF5;
+}
+
+.intro-container h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin: 0;
+  color: #3F7D20
+}
+
+.intro-container p {
+  text-align: center;
+  color: #454955;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.intro-container button {
+  border: none;
+  color: #F3EFF5;
+  cursor: pointer;
+  background-color: #72B01D;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+
+
+.fa {
+  padding: 5px;
+  font-size: 15px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  border: 1px solid #72B01D;
+  color: #72B01D;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+svg {
+  background-color: transparent;
+  width: 15px;
+  height: 15px;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  position: fixed;
+  background-color: transparent;
+  left: 10px;
+  bottom: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  section {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+article {
+  width: 250px;
+}
+
+article div {
+  padding: 5px 10px;
+}
+
+article img {
+  height: 250px;
+}
+
+article h4 {
+  margin: 0;
+  color: #72B01D;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+article p {
+  font-weight: 100;
+  color: #F3EFF5;
+  font-size: small;
+}
+
+article button {
+  border: none;
+  color: #F3EFF5;
+  cursor: pointer;
+  background-color: #72B01D;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}

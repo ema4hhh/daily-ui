@@ -1,0 +1,110 @@
+.song-title {
+  font-weight: 700;
+}
+
+.song-info {
+  font-weight: 300;
+}
+
+.songs {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 70vw;
+}
+
+.songs ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  gap: 2em;
+}
+
+.songs ul > li {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.songs .song-cover {
+  width: 100%;
+  height: auto;
+}
+
+.player-bar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #04094f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.control {
+  width: 100%;
+  height: 100%;
+}
+
+.left-controls {
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1em;
+  font-size: 25px;
+  width: 25%;
+}
+
+.left-controls .time {
+  font-size: 15px;
+}
+
+.middle-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 50%;
+}
+
+.middle-controls p {
+  margin: 0;
+}
+
+.middle-controls .song-cover {
+  width: 50px;
+}
+
+.middle-controls .buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.middle-controls button {
+  font-size: 20px;
+}
+
+.right-controls {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 40px;
+  padding-right: 20px;
+  font-size: 17px;
+}
+
+.progress-bar {
+  position: absolute;
+  background-color: #060b67;
+  width: 100%;
+  height: 3px;
+  top: 0;
+}
